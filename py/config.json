@@ -1,0 +1,22 @@
+{
+  "name": "demo2",
+  "input": "data/demo2.jpg",
+  "log_dir": "out/log",
+  "out_dir": "out/result",
+  "inter_dir": "out/inter",
+  "options": {
+    "timer": true,
+    "redirect_stdout": false,
+    "redirect_stderr": false
+  },
+  "options_pre": {
+    "log_pictures": true,
+    "log_text": true,
+    "canny": {
+      "threshold1": 80,
+      "threshold2": 110
+    }
+  },
+  "options_core": {},
+  "options_post": {}
+}
