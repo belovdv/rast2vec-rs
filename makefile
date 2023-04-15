@@ -1,5 +1,4 @@
 workspace = out/1
-mode = 
 dir_source = data
 
 all:
@@ -10,3 +9,8 @@ run:
 	rm -rf out/1/*
 	cargo build
 	RUST_BACKTRACE=1 time -p cargo run -- ${args}
+
+img = 
+clean_svg:
+	scour -i examples/${img}.svg -o examples/${img}_s.svg 
+

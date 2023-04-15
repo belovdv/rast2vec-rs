@@ -11,7 +11,7 @@ fn main() {
     let timer_all = config.timer("all");
 
     let mut pipeline = pipeline::Pipeline::new(config);
-    pipeline.run("emodji");
+    pipeline.run("icons");
 
     timer_all.stop()
 }
