@@ -1,9 +1,9 @@
 use std::collections::HashSet;
 
-use super::Pos;
+use super::V;
 
-pub fn pos_debug_hashset<P: Copy + Into<Pos>>(data: &HashSet<P>) -> String {
-    let data: HashSet<Pos> = data.iter().map(|&p| p.into()).collect();
+pub fn pos_debug_hashset<P: Copy + Into<V>>(data: &HashSet<P>) -> String {
+    let data: HashSet<V> = data.iter().map(|&p| p.into()).collect();
 
     let xm = data.iter().map(|p| p.x).max().unwrap_or(0);
     let ym = data.iter().map(|p| p.y).max().unwrap_or(0);

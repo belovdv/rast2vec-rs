@@ -5,7 +5,8 @@ dir_source = data
 all:
 	cargo test
 
-args = --mode ${mode} --workspace ${workspace} --dir-source ${dir_source}
+args = --workspace ${workspace} --dir-source ${dir_source} -t
 run:
+	rm -rf out/1/*
 	cargo build
 	RUST_BACKTRACE=1 time -p cargo run -- ${args}
